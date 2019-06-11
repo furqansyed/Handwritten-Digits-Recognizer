@@ -168,7 +168,7 @@ def drag(event):
                             grid[i+1][j+1].changeColour()
                             grid[i+1][j].changeColour()
                         # Top-Right Corner
-                        elif(j == len(grid)):
+                        elif(j == len(grid)-1):
                             grid[i+1][j].changeColour()
                             grid[i+1][j-1].changeColour()
                             grid[i][j-1].changeColour()
@@ -180,14 +180,14 @@ def drag(event):
                             grid[i][j-1].changeColour()
                     
                     # Bottom Row
-                    elif(i == len(grid)):
+                    elif(i == len(grid)-1):
                         # Bottom-Left Corner
                         if(j == 0):
                             grid[i-1][j].changeColour()
                             grid[i-1][j+1].changeColour()
                             grid[i][j+1].changeColour()
                         # Bottom-Right Corner
-                        elif(j == len(grid)):
+                        elif(j == len(grid)-1):
                             grid[i][j-1].changeColour()
                             grid[i-1][j-1].changeColour()
                             grid[i-1][j].changeColour()
@@ -207,7 +207,7 @@ def drag(event):
                         grid[i][j+1].changeColour()
                     
                     # Right Row
-                    elif(j == len(grid)):
+                    elif(j == len(grid)-1):
                         grid[i+1][j].changeColour()
                         grid[i+1][j-1].changeColour()
                         grid[i][j-1].changeColour()
